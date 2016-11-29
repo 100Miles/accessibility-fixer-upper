@@ -90,30 +90,34 @@
 
         <table>
           <caption>Prices for small, medium and large shrubberies.</caption>
-          <tr>
-            <th scope="col">&nbsp;</td>
-            <th scope="col">Small</td>
-            <th scope="col">Medium</td>
-            <th scope="col">Large</td>
-          </tr>
-          <tr>
-            <td>Grassy shrubs</td>
-            <td>$10</td>
-            <td>$20</td>
-            <td>$30</td>
-          </tr>
-          <tr>
-            <td>Shrubs with laurels</td>
-            <td>$40</td>
-            <td>$70</td>
-            <td>$100</td>
-          </tr>
-          <tr>
-            <td>Two-level shrubbery</td>
-            <td>$50</td>
-            <td>$70</td>
-            <td>$90</td>
-          </tr>
+          <thead>
+            <tr>
+              <th scope="col">&nbsp;</th>
+              <th scope="col">Small</th>
+              <th scope="col">Medium</th>
+              <th scope="col">Large</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Grassy shrubs</th>
+              <td>$10</td>
+              <td>$20</td>
+              <td>$30</td>
+            </tr>
+            <tr>
+              <th scope="row">Shrubs with laurels</th>
+              <td>$40</td>
+              <td>$70</td>
+              <td>$100</td>
+            </tr>
+            <tr>
+              <th scope="row">Two-level shrubbery</th>
+              <td>$50</td>
+              <td>$70</td>
+              <td>$90</td>
+            </tr>
+          </tbody>
         </table>
       </div>
     </section>
@@ -147,16 +151,16 @@
 
         <form class="grid" method="post">
           <div class="unit [ xs-1 s-1 m-1-2 l-1-3 ] push gutter-1-2">
-            <span class="push-1-8">Your name</span>
-            <input>
+            <label for="name" class="push-1-8">Your name</label>
+            <input id="name" type="text">
           </div>
           <div class="unit [ xs-1 s-1 m-1-2 l-1-3 ] push gutter-1-2">
-            <span class="push-1-8">E-mail address</span>
-            <input>
+            <label for="email" class="push-1-8">E-mail address</label>
+            <input id="email" type="text">
           </div>
           <div class="unit [ xs-1 s-1 m-1-2 l-1-3 ] push gutter-1-2">
-            <span class="push-1-8">Type of shrubbery</span>
-            <select>
+            <label for="type" class="push-1-8">Type of shrubbery</label>
+            <select id="type">
               <option>Two-level shrubbery</option>
               <option>Small shrubbery</option>
               <option>Shrubbery with laurels</option>
